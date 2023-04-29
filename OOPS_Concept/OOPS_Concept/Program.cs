@@ -34,8 +34,15 @@ namespace OOPS_Concept
             //Console.WriteLine("Hi, my name is " + name + " and I am " + age + " years old.");
 
             //Abstraction
-            Shape circle = new Circle();
-            circle.Draw();
+            //Shape circle = new Circle();
+            //circle.Draw();
+
+            //MethodTypes
+            MethodTypes math = new MethodTypes();
+            math.Greeting();
+            math.Add(10, 5);
+            int result = math.Subtract(10, 5);
+            Console.WriteLine("Result of subtraction: " + result);
         }
     }
 }
