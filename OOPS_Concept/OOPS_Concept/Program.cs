@@ -1,4 +1,6 @@
-﻿namespace OOPS_Concept
+﻿using System.Xml.Linq;
+
+namespace OOPS_Concept
 {
     public class Program
     {
@@ -20,10 +22,17 @@
             //Console.WriteLine("Add with three int parameter :" + overloading.Add(2, 2, 8));
 
             //Override
-            baseClass addition = new baseClass();           
-            Console.WriteLine("Result of addition operation: " + addition.Calculate(10, 5));
-            derived subtraction = new derived();
-            Console.WriteLine("Result of subtraction operation: " + subtraction.Calculate(10, 5));
+            //baseClass addition = new baseClass();           
+            //Console.WriteLine("Result of addition operation: " + addition.Calculate(10, 5));
+            //derived subtraction = new derived();
+            //Console.WriteLine("Result of subtraction operation: " + subtraction.Calculate(10, 5));
+
+            //Encapsulation
+            Encapsulation encapsulation = new Encapsulation();
+
+            string name = encapsulation.Name = "Nk";
+            int age = encapsulation.Age = 88;
+            Console.WriteLine("Hi, my name is " + name + " and I am " + age + " years old.");
         }
     }
 }
