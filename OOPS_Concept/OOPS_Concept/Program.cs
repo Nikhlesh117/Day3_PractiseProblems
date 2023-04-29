@@ -28,11 +28,14 @@ namespace OOPS_Concept
             //Console.WriteLine("Result of subtraction operation: " + subtraction.Calculate(10, 5));
 
             //Encapsulation
-            Encapsulation encapsulation = new Encapsulation();
+            //Encapsulation encapsulation = new Encapsulation();
+            //string name = encapsulation.Name = "Nk";
+            //int age = encapsulation.Age = 88;
+            //Console.WriteLine("Hi, my name is " + name + " and I am " + age + " years old.");
 
-            string name = encapsulation.Name = "Nk";
-            int age = encapsulation.Age = 88;
-            Console.WriteLine("Hi, my name is " + name + " and I am " + age + " years old.");
+            //Abstraction
+            Shape circle = new Circle();
+            circle.Draw();
         }
     }
 }
