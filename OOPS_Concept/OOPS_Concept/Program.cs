@@ -15,9 +15,15 @@
             //obj2.PrintName();
 
             //Overloading
-            Overloading overloading= new Overloading();
-            Console.WriteLine("Add with two int parameter :" + overloading.Add(4, 2));
-            Console.WriteLine("Add with three int parameter :" + overloading.Add(2, 2, 8));
+            //Overloading overloading= new Overloading();
+            //Console.WriteLine("Add with two int parameter :" + overloading.Add(4, 2));
+            //Console.WriteLine("Add with three int parameter :" + overloading.Add(2, 2, 8));
+
+            //Override
+            baseClass addition = new baseClass();           
+            Console.WriteLine("Result of addition operation: " + addition.Calculate(10, 5));
+            derived subtraction = new derived();
+            Console.WriteLine("Result of subtraction operation: " + subtraction.Calculate(10, 5));
         }
     }
 }
