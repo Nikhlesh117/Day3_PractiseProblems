@@ -38,11 +38,18 @@ namespace OOPS_Concept
             //circle.Draw();
 
             //MethodTypes
-            MethodTypes math = new MethodTypes();
-            math.Greeting();
-            math.Add(10, 5);
-            int result = math.Subtract(10, 5);
-            Console.WriteLine("Result of subtraction: " + result);
+            //MethodTypes math = new MethodTypes();
+            //math.Greeting();
+            //math.Add(10, 5);
+            //int result = math.Subtract(10, 5);
+            //Console.WriteLine("Result of subtraction: " + result);
+
+            //Value And Reference type
+            int x = 40;
+            int y = 10;
+            ValueAndReferenceType obj = new ValueAndReferenceType();
+            obj.Value(x, y);
+            obj.Reference(ref x, y);
         }
     }
 }
