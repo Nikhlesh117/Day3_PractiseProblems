@@ -76,13 +76,18 @@ namespace OOPS_Concept
             //Rectangle_one rectangle = new Rectangle_one();
             //rectangle.Draw();
 
-
             // Constructors
-            Constructor obj1 = new Constructor(5, 10);
-            Constructor obj2 = new Constructor();
-            Console.WriteLine("Sum of obj1: " + obj1.Sum());
-            Console.WriteLine("Sum of obj2: " + obj2.Sum());
+            //Constructor obj1 = new Constructor(5, 10);
+            //Constructor obj2 = new Constructor();
+            //Console.WriteLine("Sum of obj1: " + obj1.Sum());
+            //Console.WriteLine("Sum of obj2: " + obj2.Sum());
 
+            //Interface
+            Dog dog = new Dog();
+            dog.Speak();
+            Cat cat = new Cat();
+            cat.Speak();
+           
         }
     }
 }
