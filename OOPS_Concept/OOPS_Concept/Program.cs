@@ -1,4 +1,5 @@
-﻿using System.Xml.Linq;
+﻿using System.Drawing;
+using System.Xml.Linq;
 
 namespace OOPS_Concept
 {
@@ -45,11 +46,36 @@ namespace OOPS_Concept
             //Console.WriteLine("Result of subtraction: " + result);
 
             //Value And Reference type
-            int x = 40;
-            int y = 10;
-            ValueAndReferenceType obj = new ValueAndReferenceType();
-            obj.Value(x, y);
-            obj.Reference(ref x, y);
+            //int x = 40;
+            //int y = 10;
+            //ValueAndReferenceType obj = new ValueAndReferenceType();
+            //obj.Value(x, y);
+            //obj.Reference(ref x, y);
+
+            //SingleLevelInheritence
+            Student student = new Student();
+            student.Name = "NK";
+            student.Age = 20;
+            student.StudentID = "1234";
+            student.Greeting();
+            student.Study();
+            Console.WriteLine("-----------------------------------------------");
+            //MultiLevelInheritance 
+            CollegeStudent collegeStudent = new CollegeStudent();
+            collegeStudent.Name = "NK";
+            collegeStudent.Age = 20;
+            collegeStudent.StudentID = "1234";
+            collegeStudent.Major = "Computer Science";
+            collegeStudent.Greeting();
+            collegeStudent.Study();
+            collegeStudent.AttendClass();
+            Console.WriteLine("-----------------------------------------------");
+            //HierarchicalInheritance
+            Circle_one circle = new Circle_one();
+            circle.Draw();
+            Rectangle_one rectangle = new Rectangle_one();
+            rectangle.Draw();
+
         }
     }
 }
