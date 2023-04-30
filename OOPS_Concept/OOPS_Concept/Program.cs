@@ -53,28 +53,35 @@ namespace OOPS_Concept
             //obj.Reference(ref x, y);
 
             //SingleLevelInheritence
-            Student student = new Student();
-            student.Name = "NK";
-            student.Age = 20;
-            student.StudentID = "1234";
-            student.Greeting();
-            student.Study();
-            Console.WriteLine("-----------------------------------------------");
+            //Student student = new Student();
+            //student.Name = "NK";
+            //student.Age = 20;
+            //student.StudentID = "1234";
+            //student.Greeting();
+            //student.Study();
+            //Console.WriteLine("-----------------------------------------------");
             //MultiLevelInheritance 
-            CollegeStudent collegeStudent = new CollegeStudent();
-            collegeStudent.Name = "NK";
-            collegeStudent.Age = 20;
-            collegeStudent.StudentID = "1234";
-            collegeStudent.Major = "Computer Science";
-            collegeStudent.Greeting();
-            collegeStudent.Study();
-            collegeStudent.AttendClass();
-            Console.WriteLine("-----------------------------------------------");
+            //CollegeStudent collegeStudent = new CollegeStudent();
+            //collegeStudent.Name = "NK";
+            //collegeStudent.Age = 20;
+            //collegeStudent.StudentID = "1234";
+            //collegeStudent.Major = "Computer Science";
+            //collegeStudent.Greeting();
+            //collegeStudent.Study();
+            //collegeStudent.AttendClass();
+            //Console.WriteLine("-----------------------------------------------");
             //HierarchicalInheritance
-            Circle_one circle = new Circle_one();
-            circle.Draw();
-            Rectangle_one rectangle = new Rectangle_one();
-            rectangle.Draw();
+            //Circle_one circle = new Circle_one();
+            //circle.Draw();
+            //Rectangle_one rectangle = new Rectangle_one();
+            //rectangle.Draw();
+
+
+            // Constructors
+            Constructor obj1 = new Constructor(5, 10);
+            Constructor obj2 = new Constructor();
+            Console.WriteLine("Sum of obj1: " + obj1.Sum());
+            Console.WriteLine("Sum of obj2: " + obj2.Sum());
 
         }
     }
