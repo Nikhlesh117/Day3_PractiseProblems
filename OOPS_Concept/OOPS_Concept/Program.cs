@@ -83,11 +83,17 @@ namespace OOPS_Concept
             //Console.WriteLine("Sum of obj2: " + obj2.Sum());
 
             //Interface
-            Dog dog = new Dog();
-            dog.Speak();
-            Cat cat = new Cat();
-            cat.Speak();
-           
+            //Dog dog = new Dog();
+            //dog.Speak();
+            //Cat cat = new Cat();
+            //cat.Speak();
+
+            //AccessModifiers
+            AccessModifiers obj = new AccessModifiers();
+            obj.PublicMethod();
+            obj.InternalMethod();
+            //obj.ProtectedMethod();  //Error: Cannot access protected method from outside the class or its derived classes
+            //obj.PrivateMethod();    //Error: Cannot access private method from outside the class
         }
     }
 }
