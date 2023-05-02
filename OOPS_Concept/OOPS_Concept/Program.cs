@@ -77,10 +77,14 @@ namespace OOPS_Concept
             //rectangle.Draw();
 
             // Constructors
-            //Constructor obj1 = new Constructor(5, 10);
-            //Constructor obj2 = new Constructor();
-            //Console.WriteLine("Sum of obj1: " + obj1.Sum());
-            //Console.WriteLine("Sum of obj2: " + obj2.Sum());
+            Constructor obj1 = new Constructor(5, 10);
+            Constructor obj2 = new Constructor();
+            Constructor obj3 = new Constructor(obj1);
+            //Constructor obj4 = new Constructor(5); // This line will cause a compilation error because the constructor is private
+
+            Console.WriteLine("Sum of obj1: " + obj1.Sum());
+            Console.WriteLine("Sum of obj2: " + obj2.Sum());
+            Console.WriteLine("Sum using copy constructor: " + obj3.Sum());
 
             //Interface
             //Dog dog = new Dog();
@@ -89,9 +93,9 @@ namespace OOPS_Concept
             //cat.Speak();
 
             //AccessModifiers
-            AccessModifiers obj = new AccessModifiers();
-            obj.PublicMethod();
-            obj.InternalMethod();
+            //AccessModifiers obj = new AccessModifiers();
+            //obj.PublicMethod();
+            //obj.InternalMethod();
             //obj.ProtectedMethod();  //Error: Cannot access protected method from outside the class or its derived classes
             //obj.PrivateMethod();    //Error: Cannot access private method from outside the class
         }

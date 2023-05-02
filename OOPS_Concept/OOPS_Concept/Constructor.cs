@@ -17,6 +17,12 @@ namespace OOPS_Concept
             num1 = n1;
             num2 = n2;
         }
+        // Copy constructor
+        public Constructor(Constructor obj)
+        {
+            num1 = obj.num1;
+            num2 = obj.num2;
+        }
 
         // Non-parameterized constructor
         public Constructor()
@@ -24,9 +30,23 @@ namespace OOPS_Concept
             num1 = 0;
             num2 = 0;
         }
+        
+        // Static constructor
+        static Constructor()
+        {
+            Console.WriteLine("Static constructor called");
+        }
+        // Private constructor
+        private Constructor(int n)
+        {
+            num1 = n;
+            num2 = n;
+        }
         public int Sum()
         {
             return num1 + num2;
         }
+
+
     }
 }
